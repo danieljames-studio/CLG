@@ -31,3 +31,19 @@
   </g>
 </svg>
 
+
+<script>
+
+document.addEventListener('DOMContentLoaded', function () {
+    var product = document.querySelector('.cls-1');
+    var productContent = document.querySelector('.product-content');
+
+    product.addEventListener('mouseenter', function (e) {
+        productContent.classList.add('content-show');
+    });
+    product.addEventListener('mouseleave', function () {
+        productContent.classList.remove('content-show');
+    })
+})
+
+</script>

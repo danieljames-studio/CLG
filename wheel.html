@@ -22,7 +22,8 @@
         fill: #70e3b0;
       }
 
-      #Product_Text:hover > .cls-3 {
+
+      #Product_Text.hover .cls-3 {
         fill: #ffffff!important;
       }
 
@@ -110,4 +111,12 @@
   </g>
 </svg>
 
+<script>
 
+jQuery('#Product_Shape').hover(function () {
+    jQuery('#Product_Text').addClass('hover');
+}, function () {
+    jQuery('#Product_Text').removeClass('hover');
+});
+
+</script>

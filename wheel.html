@@ -22,7 +22,7 @@
         fill: #70e3b0;
       }
 
-      #Product_Text .white {
+      #Product_Text:hover > .cls-3 {
         fill: #ffffff!important;
       }
 
@@ -110,17 +110,4 @@
   </g>
 </svg>
 
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-    var productItem = document.querySelector('#Product_Shape');
-    var productText = document.querySelector('#Product_Text');
 
-    productItem.addEventListener('mouseenter', function (e) {
-        productText.classList.add('white');
-    });
-    productItem.addEventListener('mouseleave', function () {
-        productText.classList.remove('white');
-    })
-
-})
-</script>

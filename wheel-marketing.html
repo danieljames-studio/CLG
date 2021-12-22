@@ -6,7 +6,7 @@
         transition: all 0.4s ease;
       }
 
-      .cls-1:hover, .cls-1.active, .cls-3.active {
+      .cls-1:hover, .cls-1.active {
         fill: #2a1962;
         transition: all 0.4s ease;
       }
@@ -30,7 +30,8 @@
       #Support_Text.hover .cls-3,
       #Success_Text.hover .cls-3,
       #Sales_Text.hover .cls-3,
-      #Marketing_Text.hover .cls-3 {
+      #Marketing_Text.hover .cls-3,
+      .cls-3.active {
         fill: #ffffff!important;
         transition: all 0.4s ease;
       }
@@ -127,11 +128,6 @@ jQuery('#Product_Shape').hover(function () {
     jQuery('#Product_Text').removeClass('hover');
 });
 
-jQuery('#Marketing_Shape').hover(function () {
-    jQuery('#Marketing_Text').addClass('hover');
-}, function () {
-    jQuery('#Marketing_Text').removeClass('hover');
-});
 
 jQuery('#Support_Shape').hover(function () {
     jQuery('#Support_Text').addClass('hover');

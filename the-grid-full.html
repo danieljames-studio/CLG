@@ -93,34 +93,12 @@
 </svg>
 
 <script>
-// when DOM is ready
-document.addEventListener('DOMContentLoaded', ()=>{
- // Hover in on .image-trigger-top
- document.querySelectorAll('.super-users').forEach(trigger => {
-  trigger.addEventListener('mouseover', () => { 
-    document.querySelectorAll('.super-users').forEach(target => target.classList.add('highlight')); 
-  });
- }); 
- 
- // Hover out on .image-trigger-top
- document.querySelectorAll('.image-trigger-top').forEach(trigger => {
-  trigger.addEventListener('mouseout', () => { 
-    document.querySelectorAll('.image-top').forEach(target => target.classList.remove('monalisa-top')); 
-  });
- }); 
-
- // Hover in on .image-trigger-bottom
- document.querySelectorAll('.image-trigger-bottom').forEach(trigger => {
-  trigger.addEventListener('mouseover', () => { 
-    document.querySelectorAll('.image-bottom').forEach(target => target.classList.add('monalisa-bottom')); 
-  });
- }); 
- 
- // Hover out on .image-trigger-bottom
- document.querySelectorAll('.image-trigger-bottom').forEach(trigger => {
-  trigger.addEventListener('mouseout', () => { 
-    document.querySelectorAll('.image-bottom').forEach(target => target.classList.remove('monalisa-bottom')); 
-  });
- }); 
-});
+$('.super-users').hover(
+  function () {
+    $(this).addClass('hover');
+  }, 
+  function () {
+    $(this).removeClass('hover');
+  }
+  );
 </script>

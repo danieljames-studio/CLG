@@ -93,6 +93,11 @@
 </svg>
 
 <script>
+
+  $('#superusers_link').hover(function(){  
+    $(this).trigger('click');  
+}); 
+
   jQuery('#observers_link').hover( function() { jQuery( this ).click(); } ); 
   jQuery('#inactives_link').hover( function() { jQuery( this ).click(); } ); 
   jQuery('#superusers_link').hover( function() { jQuery( this ).click(); } ); 
